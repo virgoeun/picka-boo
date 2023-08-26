@@ -1,0 +1,253 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Varela+Round&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Lilita One';
+    font-style: normal;
+    font-weight: 400;
+    caret-color: transparent;
+  }
+
+#start-screen {
+  background-image: url(../pics/background.png);
+  background-color: #F27E93;
+  height: 100vh;
+  width:100%;
+  background-repeat: no-repeat;
+  background-position:center;
+  animation: shaking 2.5s infinite;
+}
+
+@keyframes shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  100% { transform: rotate(2deg); }
+}
+
+#icon {
+  width:5%;
+  padding-left: 25px;
+  padding-top:20px;
+  cursor:pointer;
+}
+
+  .title {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  
+  .mainimage {
+    display: block;
+    margin-top:-20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  .main-button {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top:110px;
+    gap: 150px;
+  }
+
+ .startbutton {
+    width:15%;
+    height:147px;
+    margin-top: -50px;
+    margin-right:0;
+    margin-bottom:0;
+    margin-left:0;
+  }
+
+#gameinstruction {
+  display:block;
+  margin-top:-600px;
+  margin-left:0;
+  margin-right:0;
+  display:none;
+  }
+  
+  #instructionbutton {
+    width:15%;
+    height:160px;
+    margin-top: -58px;
+    margin-right:0;
+    margin-bottom:0;
+    margin-left:0;
+    z-index:0;
+  }
+
+  #game-screen {
+    display: none;
+    align-content: center;
+    padding: 20px 0px;
+    background-image: url(../pics/bg.png);
+    background-size: cover;
+    height: 100vh
+  }
+
+  #game-container {
+    font-size:20px;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    padding-left:40px;
+    padding-top:20px;
+    gap:10px;
+    padding-bottom: 20px;
+  }
+
+#grid {
+    width:642px; 
+    height:642px; 
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: -50px;
+    background-size: cover;
+    border: 5px solid #F27E93;
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+
+#grid div {
+    width:200px;
+    height:200px;
+    border: 7px solid #F27E93; 
+  }   
+    
+.mole {
+    width:200px;
+    height:200px;
+    background-color: #F29C94;
+  }
+    
+.mole-two {
+    width:200px;
+    height:200px;
+    background-color:#F7F6EA;
+  }
+
+.obstacle {
+  width:200px;
+  height:200px;
+}
+
+#game-end {
+  background-color: #F27E93;
+  height:100vh;
+  display: none;
+}
+
+.gameover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-5px;
+  width: 50%;
+}
+
+.gameover-text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+.restart-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-30px;
+  padding-bottom:20px;
+  width: 16%;
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media only screen and (max-width: 1090px)  {
+
+  #game-container {
+    font-size:17px;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -110px;
+    padding-left:20px;
+    padding-top:40px;
+    gap:10px;
+  }
+
+  #gameinstruction {
+    display:block;
+    margin-top:-120px;
+    margin-left:0;
+    margin-right:0;
+    display:none;
+    }
+
+  #grid {
+    width:642px; 
+    height:642px; 
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-size: cover;
+    border: 5px solid #F27E93;
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .gameover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+    width: 80%;
+  }
+  
+  .gameover-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-top: 300px
+  }
+  
+  .restart-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-30px;
+    margin-bottom:-55px;
+    width: 33%;
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+  }
+  
+}

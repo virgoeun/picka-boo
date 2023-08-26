@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+      <div id="start-screen">
+        <div class="music-icon">
+          <img id="icon" src="./pics/musicoff.svg" alt="musicicon">
+          <audio id ="mySong">
+            <source src="./sounds/song1.wav" type="audio/wav">
+          </audio>
+          <script>
+            const mySong = document.getElementById("mySong");
+            const icon = document.getElementById("icon");
+            icon.onclick=function() {
+      if(mySong.paused) {
+        mySong.play();
+        icon.src="./pics/musicon.svg"}
+  else {
+      mySong.pause();
+      icon.src = "./pics/musicoff.svg"}
+  } </script>
+
+    
+          </div>
+        <img class ="title" src="./pics/title.png" alt="title"></img>
+       <!-- <img class ="mainimage"src="./Pics/boo2.png" alt="mainimage"> -->
+        <div class ="main-button"> 
+        <img  Id="gameinstruction" src ="./pics/instruction.png" alt="gameinstruction"></img>
+        <img class ="startbutton" src="./pics/start.png" alt="startbutton"></img>
+        <img  Id="instructionbutton" src ="./pics/howtoplay.png" alt="instructionbutton"></img>
+    </div>
+    </div>
+    
+      <div id="game-screen">
+        <div id="game-container"> 
+          <h2></h2>
+          <h2 id="score">Your Score: 0</h2>
+          <h2 id="miss">Miss: 0</h2>
+          <h2 id="time-left">Time Left:</h2>
+        </div> 
+        
+        <div id ="grid">
+          <div class = "square" id = "0"> </div>
+          <div class = "square" id = "1"> </div>
+          <div class = "square" id = "2"> </div>
+          <div class = "square" id = "3"> </div>
+          <div class = "square" id = "4"> </div>
+          <div class = "square" id = "5"> </div>
+          <div class = "square" id = "6"> </div>
+          <div class = "square" id = "7"> </div>
+          <div class = "square" id = "8">  </div>
+        </div> 
+       
+      </div>
+      </div>
+
+    <div id="game-end">  
+     <img class="gameover-text" src="./pics/gameover.png" alt="gameoverbutton" />
+      <img class="restart-button" src="./pics/restart.png" alt ="restartbutton"></img>
+      <img class="gameover" src="./pics/hit.gif" alt="gameover" />
+    </div>
+
+  </main>
+
+ <script type="text/javascript" src="./js/game.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+  </body>
+</html>
