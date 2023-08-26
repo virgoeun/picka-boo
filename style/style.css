@@ -1,150 +1,155 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Varela+Round&display=swap");
 
 * {
-    padding:0;
-    margin:0;
-    font-family: 'Lilita One';
-    font-style: normal;
-    font-weight: 400;
-    caret-color: transparent;
-  }
+  padding: 0;
+  margin: 0;
+  font-family: "Lilita One";
+  font-style: normal;
+  font-weight: 400;
+  caret-color: transparent;
+}
 
 #start-screen {
   background-image: url(../pics/background.png);
-  background-color: #F27E93;
+  background-color: #f27e93;
   height: 100vh;
-  width:100%;
+  width: 100%;
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   animation: shaking 2.5s infinite;
 }
 
 @keyframes shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(2deg); }
-  50% { transform: rotate(-2deg); }
-  100% { transform: rotate(2deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
 }
 
 #icon {
-  width:5%;
+  width: 5%;
   padding-left: 35px;
-  padding-top:45px;
-  cursor:pointer;
+  padding-top: 45px;
+  cursor: pointer;
 }
 
-  .title {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-  
-  .mainimage {
-    display: block;
-    margin-top:-20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-  }
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
 
-  .main-button {
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top:110px;
-    gap: 150px;
-  }
+.mainimage {
+  display: block;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
 
- .startbutton {
-    width:15%;
-    height:147px;
-    margin-top: -50px;
-    margin-right:0;
-    margin-bottom:0;
-    margin-left:0;
-  }
+.main-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 110px;
+  gap: 150px;
+}
+
+.startbutton {
+  width: 15%;
+  height: 147px;
+  margin-top: -50px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
 
 #gameinstruction {
-  display:block;
-  margin-top:-600px;
-  margin-left:0;
-  margin-right:0;
-  display:none;
-  }
-  
-  #instructionbutton {
-    width:16%;
-    height:160px;
-    margin-top: -58px;
-    margin-right:0;
-    margin-bottom:0;
-    margin-left:0;
-    z-index:0;
-  }
+  display: block;
+  margin-top: -600px;
+  margin-left: 0;
+  margin-right: 0;
+  display: none;
+}
 
-  #game-screen {
-    display: none;
-    align-content: center;
-    padding: 20px 0px;
-    background-image: url(../pics/bg.png);
-    background-size: cover;
-    height: 100vh
-  }
+#instructionbutton {
+  width: 16%;
+  height: 160px;
+  margin-top: -58px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  z-index: 0;
+}
 
-  #game-container {
-    font-size:20px;
-    color:black;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    padding-left:40px;
-    padding-top:20px;
-    gap:10px;
-    padding-bottom: 20px;
-  }
+#game-screen {
+  display: none;
+  align-content: center;
+  padding: 20px 0px;
+  background-image: url(../pics/bg.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+#game-container {
+  font-size: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+  padding-top: 20px;
+  gap: 10px;
+  padding-bottom: 20px;
+}
 
 #grid {
-    width:642px; 
-    height:642px; 
-    overflow: hidden;
-    margin: 0 auto;
-    margin-top: -50px;
-    background-size: cover;
-    border: 5px solid #F27E93;
-    display:flex;
-    flex-wrap: wrap;
-  }
-
+  width: 642px;
+  height: 642px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: -50px;
+  background-size: cover;
+  border: 5px solid #f27e93;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 #grid div {
-    width:200px;
-    height:200px;
-    border: 7px solid #F27E93; 
-  }   
-    
+  width: 200px;
+  height: 200px;
+  border: 7px solid #f27e93;
+}
+
 .mole {
-    width:200px;
-    height:200px;
-    background-color: #F29C94;
-  }
-    
+  width: 200px;
+  height: 200px;
+  background-color: #f29c94;
+}
+
 .mole-two {
-    width:200px;
-    height:200px;
-    background-color:#F7F6EA;
-  }
+  width: 200px;
+  height: 200px;
+  background-color: #f7f6ea;
+}
 
 .obstacle {
-  width:200px;
-  height:200px;
+  width: 200px;
+  height: 200px;
 }
 
 #game-end {
-  background-color: #F27E93;
-  height:100vh;
+  background-color: #f27e93;
+  height: 100vh;
   display: none;
 }
 
@@ -152,7 +157,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top:-5px;
+  margin-top: -5px;
   width: 50%;
 }
 
@@ -167,60 +172,81 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top:-30px;
-  padding-bottom:20px;
+  margin-top: -30px;
+  padding-bottom: 20px;
   width: 16%;
   animation: shake 1.5s;
   animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /* Tablet */
-@media screen and (max-device-width:801px)  {
-
+@media only screen and (max-device-width: 801px) {
   .title {
     margin-top: 100px;
     width: 100%;
   }
 
   .main-button {
-    margin-top:0px;
+    margin-top: 0px;
     gap: 200px;
   }
 
- .startbutton {
-    width:21%;
-    height:162px;
+  .startbutton {
+    width: 21%;
+    height: 162px;
   }
 
   #gameinstruction {
-    margin-top:-500px;
-    }    
-  
+    margin-top: -500px;
+  }
+
   #instructionbutton {
-    width:22%;
-    height:180px;
+    width: 22%;
+    height: 180px;
   }
 
   #game-container {
-    align-items:center;
+    align-items: center;
     margin-top: 100px;
     margin-bottom: -110px;
-    padding-left:20px;
-    padding-top:40px;
+    padding-left: 20px;
+    padding-top: 40px;
   }
 
   #grid {
@@ -228,64 +254,61 @@
   }
 
   .gameover {
-    margin-top:100px;
+    margin-top: 100px;
     width: 60%;
   }
-  
+
   .gameover-text {
     width: 80%;
     padding-top: 80px;
   }
-  
+
   .restart-button {
-    margin-bottom:-100px;
-    margin-top:-100px;
+    margin-bottom: -100px;
+    margin-top: -100px;
     width: 33%;
   }
-  
 }
 /* Mobile */
-@media only screen and (max-device-width: 480px)  { 
-
+@media only screen and (max-device-width: 480px) {
   .title {
     margin-top: 100px;
   }
 
   .main-button {
-    margin-top:-150px;
+    margin-top: -150px;
     gap: 250px;
   }
 
- .startbutton {
-    width:25%;
-    height:140px;
+  .startbutton {
+    width: 25%;
+    height: 140px;
     margin-top: 100px;
   }
-  
+
   #gameinstruction {
-    margin-top:200px;
-    }
+    margin-top: 200px;
+  }
 
   #instructionbutton {
-    width:24%;
-    height:155px;
-    margin-top:90px;
+    width: 24%;
+    height: 155px;
+    margin-top: 90px;
   }
 
   .gameover {
-    margin-top:200px;
+    margin-top: 200px;
     width: 90%;
   }
-  
+
   .gameover-text {
     width: 100%;
     padding-top: 220px;
   }
-  
+
   .restart-button {
-    margin-bottom:-100px;
-    margin-top:-50px;
+    margin-bottom: -100px;
+    margin-top: -50px;
     width: 33%;
   }
-
- }
+}
