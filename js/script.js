@@ -17,6 +17,9 @@ window.onload = function () {
     let moleTimerId;
     let obstacleTimerId;
   
+
+    
+
     // start-screen instruction pops up control
     instructionButton.addEventListener("click", () => {
       const startAudio = new Audio("./sounds/softclick.wav");
@@ -189,6 +192,7 @@ window.onload = function () {
     //score & miss
     squareItem.forEach((square) =>
       square.addEventListener("click", function () {
+        
         const myAudio = new Audio("./sounds/bubblesound.wav");
         myAudio.play();
   

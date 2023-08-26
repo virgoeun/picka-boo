@@ -30,8 +30,8 @@
 
 #icon {
   width:5%;
-  padding-left: 25px;
-  padding-top:20px;
+  padding-left: 35px;
+  padding-top:45px;
   cursor:pointer;
 }
 
@@ -76,7 +76,7 @@
   }
   
   #instructionbutton {
-    width:15%;
+    width:16%;
     height:160px;
     margin-top: -58px;
     margin-right:0;
@@ -188,66 +188,104 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media only screen and (max-width: 1090px)  {
+/* Tablet */
+@media screen and (max-device-width:801px)  {
+
+  .title {
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .main-button {
+    margin-top:0px;
+    gap: 200px;
+  }
+
+ .startbutton {
+    width:21%;
+    height:162px;
+  }
+
+  #gameinstruction {
+    margin-top:-500px;
+    }    
+  
+  #instructionbutton {
+    width:22%;
+    height:180px;
+  }
 
   #game-container {
-    font-size:17px;
-    color:black;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
+    align-items:center;
     margin-top: 100px;
     margin-bottom: -110px;
     padding-left:20px;
     padding-top:40px;
-    gap:10px;
   }
 
-  #gameinstruction {
-    display:block;
-    margin-top:-120px;
-    margin-left:0;
-    margin-right:0;
-    display:none;
-    }
-
   #grid {
-    width:642px; 
-    height:642px; 
-    overflow: hidden;
-    margin: 0 auto;
     margin-top: 150px;
-    background-size: cover;
-    border: 5px solid #F27E93;
-    display:flex;
-    flex-wrap: wrap;
   }
 
   .gameover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top:100px;
-    width: 80%;
+    width: 60%;
   }
   
   .gameover-text {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 80%;
-    padding-top: 300px
+    padding-top: 80px;
   }
   
   .restart-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:-30px;
-    margin-bottom:-55px;
+    margin-bottom:-100px;
+    margin-top:-100px;
     width: 33%;
-    animation: shake 1.5s;
-    animation-iteration-count: infinite;
   }
   
 }
+/* Mobile */
+@media only screen and (max-device-width: 480px)  { 
+
+  .title {
+    margin-top: 100px;
+  }
+
+  .main-button {
+    margin-top:-150px;
+    gap: 250px;
+  }
+
+ .startbutton {
+    width:25%;
+    height:140px;
+    margin-top: 100px;
+  }
+  
+  #gameinstruction {
+    margin-top:200px;
+    }
+
+  #instructionbutton {
+    width:24%;
+    height:155px;
+    margin-top:90px;
+  }
+
+  .gameover {
+    margin-top:200px;
+    width: 90%;
+  }
+  
+  .gameover-text {
+    width: 100%;
+    padding-top: 220px;
+  }
+  
+  .restart-button {
+    margin-bottom:-100px;
+    margin-top:-50px;
+    width: 33%;
+  }
+
+ }
