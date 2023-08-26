@@ -78,7 +78,7 @@ window.onload = function () {
         currentMole = randomMole.id;
   
         let moleImage = document.createElement("img"); // Create an image element for the mole
-        moleImage.src = "./Pics/boo.png";
+        moleImage.src = "./pics/boo.png";
         randomMole.appendChild(moleImage);
         moleImage.classList.add("mole"); //<div class = sqaure mole-two mole" id="8"></div> -> <img src = "..." class = "mole">
       }, 1200);
@@ -109,7 +109,7 @@ window.onload = function () {
         randomObst1.classList.add("obstacle");
   
         let obstacleImage1 = document.createElement("img");
-        obstacleImage1.src = "/pics/booscream.gif";
+        obstacleImage1.src = "./pics/booscream.gif";
         randomObst1.appendChild(obstacleImage1);
         obstacleImage1.classList.add("obstacle");
         //<div class = sqaure mole-two obstacle" id="5"></div> -> <img src = "..." class = "obstacle">
