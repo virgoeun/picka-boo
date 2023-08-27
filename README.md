@@ -11,8 +11,8 @@
 <br>
 <br>
 <br>
-It's inpsired the Pixar's animatino movie, **"Monster.,Inc"**, which is one of my favorite animation. The little girl, named "Boo" accidentally entered into the Monster World, where monsters gather and use children's cries as a energy source. However, a human being cannot entered into the Monster world, because they believe touching human can contaminate them and even kill them, which is a myth. The game starts from there, and **you(user) need to resuce "Boo" in 1 minute!** 
-
+It's inpsired the Pixar's animatino movie, "Monster.,Inc", which is one of my favorite animation. The little girl, named "Boo" accidentally entered into the Monster World, where monsters gather and use children's cries as a energy source. However, a human being cannot entered into the Monster world, because they believe touching human can contaminate them and even kill them, which is a myth. The game starts from there, and you(user) need to resuce "Boo" in 1 minute!
+<br>
 <br>
 
 I wanted to create a simple, yet colorful game, like you watch an animation, which anyone from 5 year-old girl to 30-year-old man can play. This game will bring you to your inner-child world! 
