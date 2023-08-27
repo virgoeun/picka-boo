@@ -2,12 +2,12 @@
 # My First Game Project
 # "Picka-Boo!" 
 
-<img src="./Pics/boo.png" alt="Alt text" title="Optional title">
+<img src="./pics/boo.png" alt="Alt text" title="Optional title">
 
 [Play Game](http://github.com)
 
 ## Description
-<img src="./Pics/monsters.png" alt="Alt text" title="Optional title">
+<img src="./pics/monsters.png" alt="Alt text" title="Optional title">
 <br>
 <br>
 <br>
