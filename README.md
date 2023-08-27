@@ -28,18 +28,18 @@ Each user has 1 minute time and 5 chances to miss, and if you get "Boo"(on click
 1. Load the Start screen
 2. **'Find Boo'** image button to start the game.
 3. **'How To Play'** image button for **instructions**, which has a click & pops up & close function.
-4.**music icon (on/off)** that users can control music sound.
+4. **Music icon (on/off)** that users can control music sound.
 5. Load the game screen.
 6. Load the 3*3 **Grid**, each item fits into each boxes of.
-7. **game panel** counts scores, misses, and time-left.
+7. **Game panel** counts scores, misses, and time-left.
 8. **Scores** earns by triggering "click" the target.
 9. **Miss** earns by triggering "click" the obstacles or empty boxes.
 10. When the Miss point is over 5, the game stops and shows the **Game Over** screen.
 11. **One target** & **5 Obstalce**: each item pops up without overlaps one time.
 12. When **1 minute** is up, the game stops - this is for giving a time pressure to make a game more challenging.
 13. When 1 minute is up, the game stops and give you game over screen.
-14.**Game Over** has **Do It Again** image button, that brings users to the the Start screen to restart the game.
-15.**Mobile(max 480px)** & **Table(max 801px)** responsive screen optimization
+14. **Game Over** has **Do It Again** image button, that brings users to the the Start screen to restart the game.
+15. **Mobile(max 480px)** & **Table(max 801px)** responsive screen optimization
 
 <br>
 
