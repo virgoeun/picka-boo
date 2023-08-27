@@ -7,20 +7,14 @@ class Game {
     this.gameIsOver = false; 
 } 
 
-
   start() {
     this.startScreen.style.display = "none"; // hide the start screen
     this.gameScreen.style.display = "block";
   }
     
-
-  endGame() 
-  { 
+  endGame() { 
     this.gameIsOver = true;
     this.gameScreen.style.display = "none"; // hide the game screen
     this.gameEndScreen.style.display = "block";
-  
   } 
-
-  
 }
